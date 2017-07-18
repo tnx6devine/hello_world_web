@@ -1,1 +1,8 @@
-"Hello #{user_name}.  You are #{user_age}.  What are your favorite numbers?"
+"Hello <%= name_provided %>.  You are <%= age_provided %>.  What are your three favorite numbers?"
+
+<form method="post" action="fave_nums">
+  <input type="number" name="user_num1" min="0">
+  <input hidden type="text" name = "name_provided" value = <%= name_provided %>>
+  <input hidden type="text" name = "age_provided" value = <%= age_provided %> >
+  <input type="submit">
+</form>

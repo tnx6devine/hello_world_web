@@ -1,6 +1,12 @@
 Hello <%= name_provided %>. How old are you?
 
-<form method="post" action="user_age">
-	<input type="text" name="input_age">
+<!-- <form method="post" action="user_age">
+	<input type="number" name="input_age">
 	<input type="submit">
+</form>
+ -->
+<form method="post" action="age">
+  <input type="number" name="age_provided" min="18" max="140">
+  <input type="submit">
+  <input type="text" name="name_provided" value= <%= name_provided %> hidden>
 </form>
