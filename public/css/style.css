@@ -1,29 +1,53 @@
 body {
-	background: "../img/background.jpg" ;
+	background: url("../img/background.jpg") ;
+    background-size: cover;
 	color: white;
 	font-family: sans-serif ;
+    text-align: center;
 	}
 
 footer {
-	background: "../img/blue_back.jpg";
+	background: url("../img/blue_back.jpg");
+    background-size: cover;
     position: fixed; 
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30%;
+    height: auto;
+    text-align: center;
 
+}
+
+hr {
+	display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .fimg {
 	float: right;
     display: block;
-    margin: 15px 2% 0 2%;
-    width: 30%;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    padding-right: 10vw;
+    height: 10vh;
 }
 .fp {
 	float: left;
     display: block;
-    margin: 15px 2% 0 2%;
     width: 56%;
     color:red;
+}
+
+.fp p {
+    font-size: 2rem;
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
