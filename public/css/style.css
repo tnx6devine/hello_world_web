@@ -1,0 +1,29 @@
+body {
+	background: "../img/background.jpg" ;
+	color: white;
+	font-family: sans-serif ;
+	}
+
+footer {
+	background: "../img/blue_back.jpg";
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+
+}
+
+.fimg {
+	float: right;
+    display: block;
+    margin: 15px 2% 0 2%;
+    width: 30%;
+}
+.fp {
+	float: left;
+    display: block;
+    margin: 15px 2% 0 2%;
+    width: 56%;
+    color:red;
+}
