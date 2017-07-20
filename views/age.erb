@@ -7,6 +7,8 @@ Hello <%= name_provided %>. How old are you?
  -->
 <form method="post" action="age">
   <input type="number" name="age_provided" min="18" max="140">
+  
+  <input hidden type="text" name="name_provided" value= <%= name_provided %> >
+  <input hidden type="text" name="logindate" value="getNameDate('dateOnLoad')">
   <input type="submit">
-  <input type="text" name="name_provided" value= <%= name_provided %> hidden>
 </form>
