@@ -1,9 +1,26 @@
+<script src="js/getdate.js">
+</script>
+<p> This is the date when the page loads </p>
+<p id="dateOnLoad"></p>
+
+<ruby>
+initial_time = getNameDate("dateOnLoad")
+</ruby>
+
 Hello!  What is your username?
 
 <form method="post" action="user_name">
-	<input type="text" name="name_provided"> <!-- input_name = "Jim" -->
+	<input type="text" name="name_provided"> 
 	<input type="submit">
+	<input type="text" name="dateOnLoad" placeholder=inital_time>
 </form>
 
-<button type="button" onclick="document.getElementById('date').innerHTML = Date()">Click here to show the Date and Time</button>
+<button type="button" onclick="getNameDate('date')">Click here to show the Date and Time</button>
+
+<p>This is the date when we press the button</p> 
+
 <p id="date"></p>
+
+<script>
+	window.onload = getNameDate("dateOnLoad")
+</script>
